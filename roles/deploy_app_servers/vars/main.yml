@@ -1,2 +1,9 @@
 ---
 sec_group: 'apps'
+webserver_group: 'apps'
+auth:
+  auth_url: http://192.168.0.20:5000/
+  password: r3dh4t1!
+  project_name: 'admin'
+  username: 'admin'
+...
