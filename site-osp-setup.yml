@@ -1,0 +1,5 @@
+- hosts: ./openstack.yml
+  connection: local
+  roles:
+   -  osp-setup
+   -  deploy_app_servers
