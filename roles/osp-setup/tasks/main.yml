@@ -1,9 +1,9 @@
 ---
 # tasks file for roles/osp-lab
--hosts: all
-  vars_files:
-    group_vars/all
+- include_vars:
+    file: inventory\group_vars\all\images
 - include_tasks: create-image.yml
+    file: inventory\group_vars\all\flavors
 - include_tasks: create-flavor.yml
 - debug:
     msg: 'test run success'
