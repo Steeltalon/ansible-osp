@@ -1,0 +1,4 @@
+---
+- name: Deploy OSP Server Environment
+  -roles:
+   -deploy_app_servers

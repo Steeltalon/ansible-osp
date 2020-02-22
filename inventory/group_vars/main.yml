@@ -1,10 +1,21 @@
 ---
 # vars file for roles/osp-lab
+#deployment type
+deployment: 'QA'
+
+#Region name
+region_name: 'RegionOne'
+
+#Operating System Image Name
+os_image_name: 'rhel-guest'
+
+#Name of OpenStack Cloud instance
+osp_cloud_name: 'ospcloud'
 
 osp_networks:
-  # Public Facing Network   
+  # Public Facing Network
   external:
-    cloud_name: ospcloud
+    cloud_name: "{{ osp_cloud_name }}"
     network_name: ext_network
     subnet_name: ext_subnet
     cidr_network: "10.10.10.0/24"
@@ -12,9 +23,9 @@ osp_networks:
     external: true
 
 
-  # Private Facing Network   
+  # Private Facing Network
   internal:
-    cloud_name: ospcloud
+    cloud_name: "{{ osp_cloud_name }}"
     network_name: int_network
     subnet_name: int_subnet
     cidr_network: "20.20.20.0/24"
@@ -24,16 +35,10 @@ osp_networks:
   # Public Facing Router connecting the two networks
 osp_router:
   router:
-    cloud_name: ospcloud
+    cloud_name: "{{ osp_cloud_name }}"
     state: present
     name: router
     network: ext_network
 
 #OSP Flavor Name
 flavor_name: 'm2.small'
-
-#deployment type
-deployment: 'QA'
-
-#Operating System Image Name
-os_image_name: 'rhel-guest'

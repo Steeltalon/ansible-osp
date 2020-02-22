@@ -4,7 +4,7 @@ tasks:
 - name: Create app server instance
   hosts: all
   os_server:
-    cloud: ospcloud
+    cloud: "{{ osp_cloud_name }}"
     name: "{{ webserver_name }}"
     image: "{{os_image_name}}"
     meta: "group={{ webserver_group }},deployment_name={{ deployment }}"
