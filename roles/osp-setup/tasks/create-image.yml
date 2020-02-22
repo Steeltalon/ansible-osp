@@ -1,3 +1,4 @@
+---
 - name: Download RHEL image
   get_url:
      url: "{{ image_vars.url }}"
