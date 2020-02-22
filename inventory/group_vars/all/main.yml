@@ -6,12 +6,6 @@ deployment: 'QA'
 #Region name
 region_name: 'RegionOne'
 
-#Operating System Image Name
-os_image_name: 'rhel-guest'
-
-#Name of OpenStack Cloud instance
-osp_cloud_name: 'ospcloud'
-
 #ProxyJump command used to connect from the bastion to the target systems
 ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q "{{ workstation }}""'
 

@@ -1,0 +1,9 @@
+---
+#variables created to define flavors associated with QA
+flavor_vars:
+  name: 'm2.small'
+  cloud: "{{ osp_cloud_name }}"
+  state: present
+  ram: 2048
+  vcpus: 1
+  disk: 10
