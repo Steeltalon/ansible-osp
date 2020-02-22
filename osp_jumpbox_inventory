@@ -1,2 +1,2 @@
 [jumpbox]
-workstation
+hosts: workstation
