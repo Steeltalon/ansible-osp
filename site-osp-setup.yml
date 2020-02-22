@@ -1,4 +1,4 @@
-#- hosts: ./osp_jumpbox_inventory
-#  connection: local
+- hosts: workstation
+  connection: local
 - roles:
    -  osp-setup
