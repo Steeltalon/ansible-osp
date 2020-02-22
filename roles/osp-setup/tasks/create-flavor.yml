@@ -1,4 +1,5 @@
 ---
+- import_playbook:
 - name: Create m2.small flavor
   os_nova_flavor:
      cloud: "{{ flavor_vars.Cloud }}"

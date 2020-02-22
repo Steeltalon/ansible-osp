@@ -1,5 +1,5 @@
 ---
-- import playbook: inventory\group_vars\all\images.yml
+- import_playbook: inventory\group_vars\all\images.yml
 - name: Download RHEL image
   get_url:
      url: "{{ image_vars.url }}"
