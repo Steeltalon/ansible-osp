@@ -2,7 +2,7 @@
 # tasks file for roles/osp-lab
 - include_tasks: create-image.yml
 - include_tasks: create-flavor.yml
-debug:
+- debug:
   msg: 'test run success'
 
 #- include_tasks: create-keypair.yml
