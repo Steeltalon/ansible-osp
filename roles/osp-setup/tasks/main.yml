@@ -3,7 +3,7 @@
 - include_tasks: create-image.yml
 - include_tasks: create-flavor.yml
 - debug:
-  msg: 'test run success'
+    msg: 'test run success'
 
 #- include_tasks: create-keypair.yml
 #- include_tasks: create-network.yml
