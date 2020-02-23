@@ -1,8 +1,8 @@
 ---
 hosts: localhost
-- name: Create m2.small flavor
+- name: 'Create m2.small flavor'
   os_nova_flavor:
-     cloud: "{{ flavor_vars.Cloud }}"
+     cloud: "{{ flavor_vars.cloud }}"
      state: "{{ flavor_vars.state }}"
      name: "{{ flavor_vars.name }}"
      ram: "{{ flavor_vars.ram }}"
