@@ -1,6 +1,6 @@
 ---
 - Name: Create Operating System image for OSP
-  hosts: localhost
+  become: yes
   tasks:
     get_url:
         url: '"{{ image_vars.url }}"'
