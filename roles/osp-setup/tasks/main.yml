@@ -2,7 +2,7 @@
 - name: OSP deployment
   host: localhost
 # tasks file for roles/osp-lab
-include_vars: openstack.yaml
+- include_vars: openstack.yaml
 #- include_vars:
 #    file: inventory\group_vars\all\images
 - include_role:
