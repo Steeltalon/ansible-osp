@@ -1,4 +1,6 @@
 - hosts: workstation
   connection: local
   roles:
-   -  osp-setup
+   - create_image
+   - create_flavor
+    
