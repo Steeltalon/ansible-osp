@@ -1,7 +1,7 @@
 - hosts: workstation
   connection: local
 - name: create OS Image
-- include_vars: images.yml
+- vars_files: images.yml
 - roles:
    - create_image
    - create_flavor
