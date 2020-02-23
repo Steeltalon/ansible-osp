@@ -1,4 +1,6 @@
 ---
+- name: OSP deployment
+  host: localhost
 # tasks file for roles/osp-lab
 import_playbook: openstack.yaml
 #- include_vars:
