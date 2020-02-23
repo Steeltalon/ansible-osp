@@ -1,6 +1,6 @@
 ---
 # tasks file for roles/osp-lab
-- include_vars: inventory\group_vars\all\openstack.yaml
+#include_vars: inventory\group_vars\all\openstack.yaml
 #- include_vars:
 #    file: inventory\group_vars\all\images
 - include_role:
