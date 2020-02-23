@@ -3,10 +3,10 @@
 import_playbook: openstack.yaml
 #- include_vars:
 #    file: inventory\group_vars\all\images
-- roles:
-    create-image.yml
+- include_role:
+    name: create-image.yml
 #    file: inventory\group_vars\all\flavors
-    create-flavor.yml
+    #create-flavor.yml
 - debug:
     msg: 'test run success'
 
