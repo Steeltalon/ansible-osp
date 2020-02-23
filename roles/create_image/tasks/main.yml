@@ -1,11 +1,10 @@
 ---
-- name: Download RHEL image
-  import_playbook: images.yml
+- include_playbook: images.yml
   get_url:
      url: "{{ image_vars.url }}"
      dest: "{{ image_vars.dest }}"
   tags: "{{ image_vars.tags }}"
-- name: "{{ image_vars.name }}"
+  name: "{{ image_vars.name }}"
   os_image:
      cloud: "{{ image_vars.os_image.cloud }}"
      name: "{{ image_vars.os_image.name }}"
