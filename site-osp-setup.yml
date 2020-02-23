@@ -1,4 +1,4 @@
-- hosts: workstation
+- hosts: localhost
   connection: local
 - name: create OS Image
 - vars_files:
