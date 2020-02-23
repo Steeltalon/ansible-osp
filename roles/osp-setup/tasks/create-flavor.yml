@@ -1,5 +1,5 @@
 ---
-- import_playbook: inventory\group_vars\all\images.yml
+- import_playbook: flavors.yml
 - name: Create m2.small flavor
   os_nova_flavor:
      cloud: "{{ flavor_vars.Cloud }}"
