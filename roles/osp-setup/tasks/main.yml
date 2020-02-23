@@ -1,10 +1,12 @@
 ---
 # tasks file for roles/osp-lab
+import_playbook: openstack.yaml
 #- include_vars:
 #    file: inventory\group_vars\all\images
-- include_tasks: create-image.yml
+- roles:
+    create-image.yml
 #    file: inventory\group_vars\all\flavors
-- include_tasks: create-flavor.yml
+    create-flavor.yml
 - debug:
     msg: 'test run success'
 

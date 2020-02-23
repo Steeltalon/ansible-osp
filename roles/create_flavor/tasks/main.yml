@@ -1,0 +1,9 @@
+- import_playbook: flavors.yml
+- name: Create m2.small flavor
+  os_nova_flavor:
+     cloud: "{{ flavor_vars.Cloud }}"
+     state: "{{ flavor_vars.state }}"
+     name: "{{ flavor_vars.name }}"
+     ram: "{{ flavor_vars.ram }}"
+     vcpus: "{{ flavor_vars.vcpus }}"
+     disk: "{{ flavor_vars.disk }}"
