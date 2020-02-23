@@ -4,7 +4,7 @@
 #- include_vars:
 #    file: inventory\group_vars\all\images
 - include_role:
-    name: create-image.yml
+    name: create_image.yml
 #    file: inventory\group_vars\all\flavors
     #create-flavor.yml
 - debug:
