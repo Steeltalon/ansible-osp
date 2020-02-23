@@ -1,6 +1,6 @@
 ---
-- import_playbook: images.yml
 - name: Download RHEL image
+  import_playbook: images.yml
   get_url:
      url: "{{ image_vars.url }}"
      dest: "{{ image_vars.dest }}"
