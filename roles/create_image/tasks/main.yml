@@ -3,10 +3,10 @@
   become: yes
   tasks:
     get_url:
-        url: {{ image_vars.url }}
-        dest: {{ image_vars.dest }}
-        tags: {{ image_vars.tags }}
-        name: {{ image_vars.name }}
+        url: "{{ image_vars.url }}"
+        dest: "{{ image_vars.dest }}"
+        tags: "{{ image_vars.tags }}"
+        name: "{{ image_vars.name }}"
     os_image:
       cloud: '"{{ image_vars.os_image.cloud }}"'
       name: '"{{ image_vars.os_image.name }}"'
