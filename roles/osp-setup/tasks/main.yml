@@ -1,6 +1,6 @@
 ---
 - name: OSP deployment
-  hosts: localhost
+- hosts: localhost
 # tasks file for roles/osp-lab
 - include_vars: openstack.yaml
 #- include_vars:
