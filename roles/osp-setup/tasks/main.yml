@@ -3,8 +3,8 @@
 #include_vars: inventory\group_vars\all\openstack.yaml
 #- include_vars:
 #    file: inventory\group_vars\all\images
-- include_role:
-    name: roles\create_image
+- role: create_image
+
 #    file: inventory\group_vars\all\flavors
     #create-flavor.yml
 - debug:
