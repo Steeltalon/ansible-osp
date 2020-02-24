@@ -1,4 +1,4 @@
-- hosts: localhost
-  connection: local
+hosts: localhost
+connection: local
 - roles:
    - create_image
