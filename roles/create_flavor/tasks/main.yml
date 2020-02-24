@@ -1,9 +1,9 @@
 ---
 - name: 'Create m2.small flavor'
   os_nova_flavor:
-     cloud: "{{ osp_cloud_name }}"
-     state: "{{ flavor_vars.state }}"
-     name: "{{ flavor_vars.name }}"
-     ram: "{{ flavor_vars.ram }}"
-     vcpus: "{{ flavor_vars.vcpus }}"
-     disk: "{{ flavor_vars.disk }}"
+     cloud: "{{ all.main.osp_cloud_name }}"
+     state: "{{ flavors.flavor_vars.state }}"
+     name: "{{ flavors.flavor_vars.name }}"
+     ram: "{{ flavors.flavor_vars.ram }}"
+     vcpus: "{{ flavors.flavor_vars.vcpus }}"
+     disk: "{{ flavors.flavor_vars.disk }}"
