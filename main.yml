@@ -1,7 +1,7 @@
 ---
 Name: Build image for OSP
-connection: local
 hosts: workstation
+connection: local
 roles:
   - create_image
   - create_flavor
