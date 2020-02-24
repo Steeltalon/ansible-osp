@@ -1,6 +1,7 @@
 ---
-hosts: localhost  
+hosts: localhost
 connection: local
-roles:
-  - create_image
-  - create_flavor
+
+tasks:
+include_role:
+  name: create_image  
