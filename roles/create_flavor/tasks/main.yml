@@ -1,7 +1,7 @@
 ---
 - name: 'Create m2.small flavor'
   os_nova_flavor:
-     cloud: "{{ flavor_vars.cloud }}"
+     cloud: "{{ osp_cloud_name }}"
      state: "{{ flavor_vars.state }}"
      name: "{{ flavor_vars.name }}"
      ram: "{{ flavor_vars.ram }}"

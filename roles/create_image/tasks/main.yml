@@ -8,7 +8,7 @@
         tags: "{{ image_vars.tags }}"
         name: "{{ image_vars.name }}"
     os_image:
-      cloud: '"{{ image_vars.os_image.cloud }}"'
+      cloud: '"{{ osp_cloud_name }}"'
       name: '"{{ image_vars.os_image.name }}"'
       container_format: '"{{ image_vars.os_image.container_format }}"'
       disk_format: '"{{ image_vars.os_image.disk_format }}"'

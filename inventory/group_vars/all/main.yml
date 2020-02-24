@@ -1,5 +1,8 @@
 ---
 # vars file for roles/osp-lab
+
+#Variable for assigning the name to the osp_cloud_name
+osp_cloud_name: ospcloud
 #deployment type
 deployment: 'QA'
 
@@ -9,33 +12,23 @@ region_name: 'RegionOne'
 #ProxyJump command used to connect from the bastion to the target systems
 ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q "{{ workstation }}""'
 
-osp_networks:
-  # Public Facing Network
-  external:
-    cloud_name: "{{ osp_cloud_name }}"
-    network_name: ext_network
-    subnet_name: ext_subnet
-    cidr_network: "10.10.10.0/24"
-    state: present
-    external: true
-
-
-  # Private Facing Network
-  internal:
-    cloud_name: "{{ osp_cloud_name }}"
-    network_name: int_network
-    subnet_name: int_subnet
-    cidr_network: "20.20.20.0/24"
-    state: present
-    external: false
-
-  # Public Facing Router connecting the two networks
-osp_router:
-  router:
-    cloud_name: "{{ osp_cloud_name }}"
-    state: present
-    name: router
-    network: ext_network
-
 #OSP Flavor Name
 flavor_name: 'm2.small'
+
+#Network Data Fields
+Network_Fields:
+cidr_network: "10.10.10.0/24"
+state: present
+
+
+#External Network variables
+External_Fields:
+  network_name: ext_network
+  subnet_name: ext_subnet
+  external: true
+
+#Internal Network varialbes
+internal_fields:
+  network_name: int_network
+  subnet_name: int_subnet
+  external: false

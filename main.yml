@@ -1,9 +1,4 @@
 - hosts: localhost
   connection: local
-- name: create OS Image
-- vars_files:
-    images.yml
-    flavors.yml
 - roles:
    - create_image
-   - create_flavor
