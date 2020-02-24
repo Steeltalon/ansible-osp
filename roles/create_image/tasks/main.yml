@@ -1,4 +1,5 @@
 ---
+- Name: assign values for OSP Image and retrieve image_vars
 - get_url:
     url: "{{ image_vars.url }}"
     dest: "{{ image_vars.dest }}"
