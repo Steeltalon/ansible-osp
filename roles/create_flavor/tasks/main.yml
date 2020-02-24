@@ -1,5 +1,4 @@
 ---
-- hosts: workstation
 - name: 'Create m2.small flavor'
   os_nova_flavor:
      cloud: "{{ all.main.osp_cloud_name }}"
