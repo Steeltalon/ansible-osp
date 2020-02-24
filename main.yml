@@ -4,3 +4,4 @@ connection: local
 hosts: workstation
 roles:
   - create_image
+  - create_flavor
