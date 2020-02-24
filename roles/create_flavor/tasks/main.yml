@@ -7,3 +7,5 @@
      ram: "{{ flavor_vars.ram }}"
      vcpus: "{{ flavor_vars.vcpus }}"
      disk: "{{ flavor_vars.disk }}"
+-debug:
+    msg: "{{ os_nova_flavor.cloud }}"
