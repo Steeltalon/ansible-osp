@@ -1,11 +1,10 @@
 ---
 - Name: Create Operating System image for OSP
-  become: yes
   tasks:
     get_url:
         url: "{{ image_vars.url }}"
         dest: "{{ image_vars.dest }}"
-        tags: "{{ image_vars.tags }}"
+        #tags: "{{ image_vars.tags }}"
         name: "{{ image_vars.name }}"
     os_image:
       cloud: "{{ osp_cloud_name }}"
@@ -14,4 +13,4 @@
       disk_format: "{{ image_vars.os_image.disk_format }}"
       state: "{{ image_vars.os_image.state }}"
       filename: "{{ image_vars.os_image.filename }}"
-      tags: "{{ image_vars.os_image.tags }}"
+      #tags: "{{ image_vars.os_image.tags }}"
