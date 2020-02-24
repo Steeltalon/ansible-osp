@@ -1,4 +1,4 @@
 hosts: localhost
 connection: local
-- roles:
-   - create_image
+roles:
+  - create_image
