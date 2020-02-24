@@ -1,4 +1,6 @@
-hosts: workstation
+---
 connection: local
+hosts: workstation
+name: "Build OSP image"
 roles:
   - create_image
