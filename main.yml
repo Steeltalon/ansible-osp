@@ -1,5 +1,4 @@
 ---
-Name: Build image for OSP
 hosts: workstation
 connection: local
 roles:
